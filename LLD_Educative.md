@@ -55,7 +55,7 @@ classDiagram
   Bike:+moveVehicle()
 
 ```
-### Explanation of Interface segregation principle . 
+### Explanation of Interface segregation principle . - Difference bwtween Liskorv Substitution and Interface segration , one deals with class other with interface. 
 
 ```mermaid
 ---
