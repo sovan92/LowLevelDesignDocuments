@@ -110,15 +110,16 @@ classDiagram
 
 ### Structure of design patterns
 <b>Pattern name: </b> This is an identification step that describes a design problem.
-Intent: This step describes the use case of the particular design pattern.
 
-Motivation: This step illustrates the problem and talks about the inner components in the pattern to solve the problem.
+<b>Intent:</b> This step describes the use case of the particular design pattern.
 
-Structure: This step visualizes the structure using a graphical representation of the classes in the pattern.
+<b>Motivation:</b> This step illustrates the problem and talks about the inner components in the pattern to solve the problem.
 
-Consequences: This step describes the trade-offs of a particular pattern.
+<b>Structure:</b> This step visualizes the structure using a graphical representation of the classes in the pattern.
 
-Implementation: This step illustrates an example of code in any popular programming language.
+<b>Consequences:</b> This step describes the trade-offs of a particular pattern.
+
+<b>Implementation:</b> This step illustrates an example of code in any popular programming language.
 
 
 
