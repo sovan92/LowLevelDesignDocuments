@@ -63,20 +63,20 @@ title: Interface segaregation principle problem.
 ---
 
 classDiagram
-  interface Shape
+  interface <<Shape>>
   Shape:+area()
   Shape <|-- Square
   Shape <|-- Rectangle
   Shape <|-- Cube
   
 
-  interface Square
+  interface <<Square>>
   Square:+area()
   
-  interface Rectangle 
+  interface <<Rectangle>> 
   Rectangle:+area()
   
-  interface Cube
+  interface <<Cube>>
   Cube:+area()
 ```
 
