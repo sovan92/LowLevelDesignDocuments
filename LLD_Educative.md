@@ -26,7 +26,9 @@ classDiagram
 
   class Bike
   Bike:+startEngine()
+```
 
+```mermaid
 ---
 title: Fixing liskorv Substitution Principle. 
 ---
