@@ -7,6 +7,8 @@
 - Dependency Inversion Principle - High level modules like interfaces shouldn't depend on low level modules.
 
 
+### Explanation of Liskrov substitution principle. 
+
 
 * Liskorv Substitution principle deals with class and extends. So if we have a method in the base class, that should always be applicable in the subclasses as well. 
 
@@ -53,4 +55,8 @@ classDiagram
   Bike:+moveVehicle()
 
 ```
+### Explanation of Interface segregation principle . 
+
+
+
 
