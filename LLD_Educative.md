@@ -79,5 +79,33 @@ classDiagram
   interface Cube
   Cube:+area()
 ```
+```mermaid
+---
+title: Interface segaregation principle Solution. 
+---
+
+classDiagram
+  interface Shape
+  Shape <|-- TwoDimentionalShape
+  Shape <|-- ThreeDimentionalShape
+  
+  interface TwoDimentionalShape
+  TwoDimentionalShape:+area()
+  TwoDimentionalShape <|-- Square
+  TwoDimentionalShape <|-- Rectangle
+
+  interface Square
+  Square:+area()
+  
+  interface Rectangle
+  Rectangle:+area()
+
+  interface ThreeDimentionalShape
+  ThreeDimentionalShape:+volume()
+  ThreeDimentionalShape<|--Cube
+
+  interface Cube
+  Cube:+volume()
+```
 
 
