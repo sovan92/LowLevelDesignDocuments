@@ -57,6 +57,26 @@ classDiagram
 ```
 ### Explanation of Interface segregation principle . 
 
+```mermaid
+---
+title: Interface segaregation principle problem. 
+---
 
+classDiagram
+  interface Shape
+  Shape:+area()
+  Shape <|-- Square
+  Shape <|-- Rectangle
+  
+
+  interface Square
+  Square:+area()
+  
+  interface Rectangle 
+  Rectangle:+area()
+  
+  interface Cube
+  Cube:+area()
+```
 
 
