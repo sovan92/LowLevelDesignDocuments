@@ -12,7 +12,8 @@
 classDiagram
   class Vehicle
   Vehicle:+startEngine()
-
+  Vehicle <|-- Car
+  Vehicle <|-- Bike
   class Car
   Car:+startEngine()
 
