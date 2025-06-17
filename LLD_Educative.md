@@ -8,7 +8,7 @@
 
 
 
-- Liskorv Substitution principle deals with class and extends. So if we have a method in the base class, that should always be applicable in the subclasses as well. 
+* Liskorv Substitution principle deals with class and extends. So if we have a method in the base class, that should always be applicable in the subclasses as well. 
 
 ```mermaid
 
