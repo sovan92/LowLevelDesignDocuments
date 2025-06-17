@@ -67,6 +67,7 @@ classDiagram
   Shape:+area()
   Shape <|-- Square
   Shape <|-- Rectangle
+  Shape <|-- Cube
   
 
   interface Square
