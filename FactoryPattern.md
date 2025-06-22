@@ -16,7 +16,7 @@ class PizzaFactory:
 class SimplePizzaFactory:
   SimplePizzaFactory : + createPizza()
 
-PizzaFacotry <|-- SimplePizzaFactory
+PizzaFactory <|-- SimplePizzaFactory
 ```
 
 
