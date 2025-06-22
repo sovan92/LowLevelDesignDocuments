@@ -8,7 +8,6 @@ A factory pattern provides ways to instanciate classes without using new.
 class PizzaStore:
   PizzaStore : -PizzaFactory pizzafactory
   PizzaStore : +orderPizza()
-  PizzaStore --> PizzaFactory
 
 class PizzaFactory:
   PizzaFactory : +createPizza()
