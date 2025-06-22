@@ -21,6 +21,9 @@ classDiagram
 
 ```
 
+
+
+## FactoryMethodPattern
 ```mermaid
 
 
@@ -53,5 +56,3 @@ classDiagram
 
 
 ```
-
-## FactoryMethodPattern
