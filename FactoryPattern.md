@@ -8,14 +8,14 @@ title: Simple Factory Pattern
 ---
 classDiagram
     PizzaFactory<|--SimplePizzaFactory
-
+    PizzaStore -- PizzaFactory
     class PizzaStore {
         +PizzaFactory factory
     }
     class PizzaFactory {
         + createPizza()
     }
-
+    
     class SimplePizzaFactory{
 
     }
