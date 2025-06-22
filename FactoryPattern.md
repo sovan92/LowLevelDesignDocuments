@@ -6,11 +6,11 @@ A factory pattern provides ways to instanciate classes without using new.
 ---
 title: Simple Factory Pattern
 ---
-flowchart LR
+
+
 classDiagram
     
     PizzaFactory<|--SimplePizzaFactory
-    
     PizzaStore -- PizzaFactory
 
     class PizzaStore {
