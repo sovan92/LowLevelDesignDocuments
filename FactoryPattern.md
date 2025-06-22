@@ -11,11 +11,12 @@ class PizzaStore:
 
 class PizzaFactory:
   PizzaFactory : +createPizza()
-  PizzaFacotry <|-- SimplePizzaFactory
+  
 
 class SimplePizzaFactory:
   SimplePizzaFactory : + createPizza()
 
+PizzaFacotry <|-- SimplePizzaFactory
 ```
 
 
