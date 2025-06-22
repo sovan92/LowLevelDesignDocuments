@@ -10,14 +10,19 @@ title: Simple Factory Pattern
 
 
 classDiagram
-    class PizzaStore
-    PizzaStore : +SimplePizzaFactory owner
-    PizzaStore --> PizzaFactory
-
-    class PizzaFactory
-
-    class SimplePizzaFactory
     PizzaFactory<|--SimplePizzaFactory
+
+    class PizzaStore {
+        +PizzaFactory factory
+    }
+    class PizzaFactory {
+        + createPizza()
+    }
+
+    class SimplePizzaFactory{
+
+    }
+    
 
 ```
 
