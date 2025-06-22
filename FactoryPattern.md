@@ -9,6 +9,8 @@ title: Simple Factory Pattern
 classDiagram
     class PizzaStore
     PizzaStore : +SimplePizzaFactory owner
+    PizzaStore --> SimplePizzaFactory
+
 ```
 
 ## FactoryMethodPattern
