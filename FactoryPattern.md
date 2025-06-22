@@ -11,12 +11,13 @@ classDiagram
   
   class PizzaFactory:
     PizzaFactory : +createPizza()
+    PizzaFactory <|-- SimplePizzaFactory
     
   
   class SimplePizzaFactory:
     SimplePizzaFactory : + createPizza()
   
-  PizzaFactory <|-- SimplePizzaFactory
+  
 ```
 
 
