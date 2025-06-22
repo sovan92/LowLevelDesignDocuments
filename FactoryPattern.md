@@ -15,7 +15,9 @@ classDiagram
     PizzaStore --> PizzaFactory
 
     class PizzaFactory
-    SimplePizzaFactory<|-- PizzaFactory
+
+    class SimplePizzaFactory
+    PizzaFactory<|--SimplePizzaFactory
 
 ```
 
