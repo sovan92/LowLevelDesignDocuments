@@ -7,8 +7,9 @@ A factory pattern provides ways to instanciate classes without using new.
 title: Simple Factory Pattern
 ---
 classDiagram
-    PizzaFactory<|--SimplePizzaFactory
     graph LR
+    PizzaFactory<|--SimplePizzaFactory
+    
     PizzaStore -- PizzaFactory
 
     class PizzaStore {
