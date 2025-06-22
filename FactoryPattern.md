@@ -8,7 +8,7 @@ title: Simple Factory Pattern
 ---
 classDiagram
     PizzaFactory<|--SimplePizzaFactory
-    PizzaStore -- PizzaFactory
+    LR: PizzaStore -- PizzaFactory
     class PizzaStore {
         +PizzaFactory factory
     }
