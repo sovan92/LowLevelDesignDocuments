@@ -18,5 +18,12 @@ Performance : System shouldn't be slow . User should be able to get a ride withi
 
 Passenger , Driver, Vehicle 
 
+User                 Vehicle          FareCalculatorService                  LocationService
+
+
+Passenger            Bike             calculateFare(Vehicle vehicle)         latitude: float
+Driver               Car                                                     longitude: float
+                                                                              
+
 
 
