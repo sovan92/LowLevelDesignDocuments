@@ -20,4 +20,13 @@ Understand what's functional and non-functional requirements. Ask targetted ques
 ### Identify core objects 
 Use step by step identification of core objects and their interactions. Map nouns in the requirements to objects , Parking lot , Vehicle, Ticket .  Verb to methods . 
 
-### Now define class diagram
+### Now define class diagram and code 
+
+Top Down approach : Define the parent classes and interface and then go down . 
+Bottom Up Approach: Define concrete classes , then go up . 
+
+Say these terms : 
+1. Low coupling and high cohesion .
+2. How your structure will translate into code.
+
+### Handle edge cases and resolve inconsistencies. 
