@@ -20,9 +20,27 @@ classDiagram
         +float getTemperature()
         +int getHumidity()
         +float getPressure()
+        + measurementsChanged()
     }
 
 ```
 
+## ObserverPattern =  Publisher(Subjects) + Subscriber (Observer) 
 
+```mermaid
+
+classDiagram
+    direction TB
+    interface Subject {
+
+        + registerObservers();
+        + removeObserver(Observer obj);
+        + notifyObservers();   
+    }
+
+    interface Observer {
+        + update();
+    }
+
+```
 
