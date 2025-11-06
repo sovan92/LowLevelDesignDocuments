@@ -33,9 +33,9 @@ classDiagram
     direction TB
     interface Subject {
 
-        + registerObservers();
-        + removeObserver(Observer obj);
-        + notifyObservers();   
+        +void registerObservers()
+        +Observer removeObserver(Observer obj)
+        +void notifyObservers();  
     }
 
     interface Observer {
