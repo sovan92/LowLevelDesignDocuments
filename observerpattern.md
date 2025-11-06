@@ -27,6 +27,8 @@ classDiagram
 
 ## ObserverPattern =  Publisher(Subjects) + Subscriber (Observer) 
 
+Publisher Subscriber pattern is different as it is used in middleware systems. 
+
 ```mermaid
 
 classDiagram
@@ -43,6 +45,25 @@ classDiagram
     }
 
 ```
+
+```java
+    interface Subject {
+
+        void addObserver();
+        void removeObserver(Observer observer);
+        
+
+    }
+
+
+
+
+
+
+```
+
+
+
 
 
 
