@@ -35,7 +35,7 @@ classDiagram
 
         +void registerObservers()
         +Observer removeObserver(Observer obj)
-        +void notifyObservers();  
+        +void notifyObservers()  
     }
 
     class Observer {
