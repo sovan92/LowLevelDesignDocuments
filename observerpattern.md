@@ -31,14 +31,14 @@ classDiagram
 
 classDiagram
     direction TB
-    interface Subject {
+    class Subject {
 
         +void registerObservers()
         +Observer removeObserver(Observer obj)
         +void notifyObservers();  
     }
 
-    interface Observer {
+    class Observer {
         + update();
     }
 
