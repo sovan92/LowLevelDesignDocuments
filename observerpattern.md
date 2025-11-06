@@ -39,7 +39,7 @@ classDiagram
     }
 
     class Observer {
-        + update();
+        +void update()
     }
 
 ```
