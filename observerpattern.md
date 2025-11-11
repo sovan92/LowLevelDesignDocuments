@@ -35,7 +35,7 @@ classDiagram
     direction TB
     class Subject {
 
-        +void registerObservers()
+        +void registerObservers(Observer obj)
         +Observer removeObserver(Observer obj)
         +void notifyObservers()  
     }
@@ -49,17 +49,16 @@ classDiagram
 ```java
     interface Subject {
 
-        void addObserver();
+        void registerObserver(Observer observer);
         void removeObserver(Observer observer);
-        
+        void notifyObservers();
 
     }
 
-
-
-
-
-
+    interface Observer {
+        void update()
+    }
+    
 ```
 
 
