@@ -56,7 +56,7 @@ classDiagram
     }
 
     interface Observer {
-        void update()
+        void update();
     }
     
 ```
