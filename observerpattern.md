@@ -62,7 +62,7 @@ classDiagram
 ```
 ## Example WeatherORama 
 
-```
+```java
 package com.sovan;
 
 import java.math.BigDecimal;
