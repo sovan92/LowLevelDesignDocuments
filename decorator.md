@@ -17,7 +17,8 @@ If you inherit behavior through subclassing , you are setting the behavior stati
 ## Important things to consider. 
 if A-> B not same as B -> A , for the methods we use , decorator might not be the best design pattern. 
 
-🛠️ ## When to Use Alternatives
+## When to Use Alternatives 🛠️
+
 Consider alternatives, like subclassing, if:
 
 Only one or two responsibilities need to be added: Simple subclassing is often clearer and less complex.
