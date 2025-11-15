@@ -26,18 +26,33 @@ Consider alternatives, like subclassing, if:
 
 ```mermaid
 
-graph TD;
+classDiagram
+    direction TB
+    class Beverage {
+        <<abstract>>
+        +String getDescription()
+        +double cost()
+    }
+    class CondimentDecorator {
+        <<abstract>>
+        +Beverage beverage // HAS-A relationship
+    }
+    class Espresso
+    class DarkRoast
+    class Mocha
+    class Whip
 
-class Beverage {
+    // IS-A Relationships (Inheritance)
+    Beverage <|-- Espresso : IS-A (Component)
+    Beverage <|-- DarkRoast : IS-A (Component)
+    Beverage <|-- CondimentDecorator : IS-A (Decorator)
 
-   - description
+    CondimentDecorator <|-- Mocha : IS-A (Concrete Decorator)
+    CondimentDecorator <|-- Whip : IS-A (Concrete Decorator)
 
-   + void getDescription()
-   + int cost()
-
-}
-
-
+    // HAS-A Relationship (Composition)
+    // The CondimentDecorator has a Beverage to decorate it.
+    CondimentDecorator *-- Beverage : HAS-A
 
 
 ```
