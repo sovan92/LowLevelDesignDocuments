@@ -13,16 +13,11 @@ If you inherit behavior through subclassing , you are setting the behavior stati
 - You can use one or more decorators to wrap an object.
 - Given that decorators have the same super type for the object it decorates , we can pass around the decorated object instead of original wrapped object.
 - Objects can be decorated at run time with as many decorators we like.
-
-## Important things to consider. 
-if A-> B not same as B -> A , for the methods we use , decorator might not be the best design pattern. 
-
+ 
 ## When to Use Alternatives 🛠️
 
 Consider alternatives, like subclassing, if:
-
 Only one or two responsibilities need to be added: Simple subclassing is often clearer and less complex.
-
-The order of adding responsibilities doesn't matter: Subclassing handles fixed additions more cleanly.
-
-The added responsibility is a core feature of the object, not a optional, runtime modification.
+The order of adding responsibilities  matter: Subclassing handles fixed additions more cleanly.
+The added responsibility is a core feature of the object, not a optional, runtime modification. 
+if A-> B not same as B -> A , for the methods we use , decorator might not be the best design pattern.
