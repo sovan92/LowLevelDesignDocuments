@@ -41,20 +41,49 @@ classDiagram
         +Beverage beverage // Composition: HAS-A relationship
     }
     
-    class Espresso
-    class DarkRoast
+    class Espresso {
+      +  double cost()
+    }
+    class DarkRoast {
+      +  double cost()
+    }
+    class HouseBlend {
+      +  double cost()
+    }
+    class Decaf {
+      +  double cost()
+    }
 
-    class Mocha
-    class Whip
-
+    class Mocha {
+      + String getDescription()
+      + double cost()
+    }
+    class Whip {
+      + String getDescription()
+      + double cost()
+    }
+    class Soy {
+      + String getDescription()
+      + double cost()
+    }
+    class Milk {
+      + String getDescription()
+      + double cost()
+    }
  
     Beverage <|-- Espresso 
-    Beverage <|-- DarkRoast 
-    Beverage <|-- CondimentDecorator 
+    Beverage <|-- DarkRoast
+    Beverage <|-- HouseBlend
+    Beverage <|-- Decaf
+
+    Beverage <|-- CondimentDecorator
+     
 
     CondimentDecorator <|-- Mocha 
     CondimentDecorator <|-- Whip 
-
+    CondimentDecorator <|-- Soy
+    CondimentDecorator <|-- Milk
+  
     CondimentDecorator *-- Beverage
 
 ```
