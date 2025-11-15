@@ -28,31 +28,41 @@ Consider alternatives, like subclassing, if:
 
 classDiagram
     direction TB
+    
+    // Abstract Component
     class Beverage {
         <<abstract>>
         +String getDescription()
         +double cost()
     }
+    
+    // Abstract Decorator
     class CondimentDecorator {
         <<abstract>>
-        +Beverage beverage // HAS-A relationship
+        +Beverage beverage // Composition: HAS-A relationship
     }
+    
+    // Concrete Components
     class Espresso
     class DarkRoast
+
+    // Concrete Decorators
     class Mocha
     class Whip
 
-    // IS-A Relationships (Inheritance)
-    Beverage <|-- Espresso : IS-A (Component)
-    Beverage <|-- DarkRoast : IS-A (Component)
-    Beverage <|-- CondimentDecorator : IS-A (Decorator)
+    ---
+    // Inheritance (IS-A) relationships
+    
+    Beverage <|-- Espresso 
+    Beverage <|-- DarkRoast 
+    Beverage <|-- CondimentDecorator 
 
-    CondimentDecorator <|-- Mocha : IS-A (Concrete Decorator)
-    CondimentDecorator <|-- Whip : IS-A (Concrete Decorator)
+    CondimentDecorator <|-- Mocha 
+    CondimentDecorator <|-- Whip 
 
-    // HAS-A Relationship (Composition)
-    // The CondimentDecorator has a Beverage to decorate it.
-    CondimentDecorator *-- Beverage : HAS-A
-
+    ---
+    // Composition (HAS-A) relationship
+    
+    CondimentDecorator *-- Beverage
 
 ```
