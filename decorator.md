@@ -28,7 +28,8 @@ Consider alternatives, like subclassing, if:
 
 graph TD;
 
-class Beverage{
+class Beverage {
+
    - description
 
    + void getDescription()
