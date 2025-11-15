@@ -17,7 +17,7 @@ If you inherit behavior through subclassing , you are setting the behavior stati
 ## When to Use Alternatives 🛠️
 
 Consider alternatives, like subclassing, if:
-Only one or two responsibilities need to be added: Simple subclassing is often clearer and less complex.
-The order of adding responsibilities  matter: Subclassing handles fixed additions more cleanly.
-The added responsibility is a core feature of the object, not a optional, runtime modification. 
-if A-> B not same as B -> A , for the methods we use , decorator might not be the best design pattern.
+- Only one or two responsibilities need to be added: Simple subclassing is often clearer and less complex.
+- The order of adding responsibilities  matter: Subclassing handles fixed additions more cleanly.
+- The added responsibility is a core feature of the object, not a optional, runtime modification. 
+- if A-> B not same as B -> A , for the methods we use , decorator might not be the best design pattern.
