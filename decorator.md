@@ -26,6 +26,17 @@ Consider alternatives, like subclassing, if:
 
 ```mermaid
 
+graph TD;
+
+class Beverage{
+   - description
+
+   + void getDescription()
+   + int cost()
+
+}
+
+
 
 
 ```
