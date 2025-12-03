@@ -26,6 +26,9 @@ But user sees the error.
 ##### Cascading failure 
 What started as one slow service becomes 
 
+##### Concurrency limiting
+Don't take more threads . I am just taking 10 threads . Not creating the 11th . 
+
 
 
 
