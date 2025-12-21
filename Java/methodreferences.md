@@ -38,7 +38,7 @@ Look how static method references shall work. On the runtime, the `methodRef` sh
 ```
 Notice `str` is an object on which the method reference is getting called.  
 
-### Calling instance method on a parameter 
+### Calling instance method on a parameter without knowing it in advance
 
 ```java
 
@@ -46,9 +46,25 @@ Notice `str` is an object on which the method reference is getting called.
       boolean check(String text);
   }
 
-  
+  StringParameterChecker methodRef = String::isEmpty;
+  StringParameterChecker lmbda = x -> x.isEmpty();
 
+  # How to use the methodref
+  methodRef.check("") // true
+```
 
+### We can combine the Instance method on particular object and instance method on a parameter without knowing it . 
+
+```java
+
+  interface StringTwoParameterChecker{
+      boolean check(String text, String prefix);
+  }
+
+  StringTwoParameterChecker methodRef = String::startsWith;
+  StringTwoParameterChecker methodRef = (s,p)->s.startsWith(p);
+
+  methodRef.check("Zoo", "A");
 
 ```
 
