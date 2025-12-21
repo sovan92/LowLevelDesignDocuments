@@ -67,5 +67,30 @@ Notice `str` is an object on which the method reference is getting called.
   methodRef.check("Zoo", "A");
 
 ```
-### 
+### Calling constuctors
+
+```java
+
+  interface EmptyStringGenerator {
+      String create();
+  }
+  EmptyStringCreator methodRef = String::new;
+  EmptyStringCreator lambda = () -> new String();
+
+  var myString = methodRef.create()
+  
+  // These things can be tricky as well
+
+  interface CopyGenerator {
+
+      String copy(String value);
+  }
+
+  CopyGenerator copyGen = String::new;
+  CopyGenerator lambda = x->new String(x);
+
+  // Now why does this work: It works as the contructor is of multiple types , one is a default constuctor other is a parameterized constructor.  
+
+```
+
 
