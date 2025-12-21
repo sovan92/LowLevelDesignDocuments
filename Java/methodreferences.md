@@ -37,3 +37,18 @@ Look how static method references shall work. On the runtime, the `methodRef` sh
   
 ```
 Notice `str` is an object on which the method reference is getting called.  
+
+### Calling instance method on a parameter 
+
+```java
+
+  interface StringParameterChecker{
+      boolean check(String text);
+  }
+
+  
+
+
+
+```
+
