@@ -6,4 +6,15 @@ There are 4 types.
 2. Method references on a particular object.
 3. Instance methods on the parameters determined at runtime.
 4. Constructor.
-5. 
+
+### Static types
+
+```java
+  interface Converter{
+      long roundabout(double num);
+  }
+
+  Converter methodRef = Math::round 
+  Converter lambda = x -> Math.round(x)
+  
+```
