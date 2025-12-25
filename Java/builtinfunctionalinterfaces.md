@@ -82,6 +82,19 @@ DoubleBinaryOperator double applyAsDouble(double, double)
 IntBinaryOperator    int    applyAsInt(int, int)
 LongBinaryOperator   int    applyAsLong(long, long)
 
+ToDoubleFunction<T>  double applyAsDouble(T)
+ToIntFunction<T>     int    applyAsInt(T)
+ToLongFunction<T>    long   applyAsLong(T)
+
+ToDoubleFunction<T, U>  double applyAsDouble(T, U)
+ToIntFunction<T, U>     int    applyAsInt(T, U)
+ToLongFunction<T, U>    long   applyAsLong(T, U)
+
+DoubleToIntFunction     int    applyAsInt(double)
+DoubleToLongFunction    long   applyAsLong(double)
+IntToDoubleFunction     
+
+
 
 
 ```
