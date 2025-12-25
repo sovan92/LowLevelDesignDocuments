@@ -92,10 +92,14 @@ ToLongFunction<T, U>    long   applyAsLong(T, U)
 
 DoubleToIntFunction     int    applyAsInt(double)
 DoubleToLongFunction    long   applyAsLong(double)
-IntToDoubleFunction     
+IntToDoubleFunction     double applyAsDouble(int)
+IntToLongFunction       long   applyAsLong(int)
+LongToDoubleFunction    double applyAsDouble(long)
+LongToIntFunction       int    applyAsInt(long)
 
-
-
+ObjectDoubleConsumer    double accept(T)
+ObjectIntConsumer       int    accept(T)
+ObjectLongConsumer      long   accept(T)
 
 ```
 
