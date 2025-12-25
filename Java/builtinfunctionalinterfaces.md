@@ -38,7 +38,7 @@ BinaryOperator<T>   T apply(T, T)       // Function takes 2 T parameters and T a
 
 ```java
 
-Interface    ReturnType  method
+Interface    ReturnType  Method
 
 Consumer     Consumer    andThen() 
 
@@ -49,6 +49,13 @@ Function     Function    andThen()
 Function     Function    compose()
 
 
+Predicte     Predicate   and()
+
+
+Predicte     Predicate   or()
+
+
+Predicte     Predicate   negate()
 ```
 
 ## SomeExamples practiced
