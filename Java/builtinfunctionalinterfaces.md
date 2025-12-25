@@ -58,7 +58,32 @@ Predicte     Predicate   or()
 Predicte     Predicate   negate()
 
 
-DoubleSupplier
+DoubleSupplier  double    getAsDouble()
+IntSupplier     int       getAsInt()
+LongSupplier    long      getAsLong()
+
+DoubleConsumer  void      accept(double)
+IntConsumer     void      accept(int)
+LongConsumer    void      accept(long)
+
+DoublePredicate boolean   test(double)
+IntPredicate    boolean   test(int)
+LongPredicate   boolean   test(long)
+
+DoubleFunction<R> R       apply(double)
+IntFunction<R>    R       apply(int)
+LongFunction<R>   R       apply(long)
+
+DoubleUnaryOperator double  applyAsDouble(double)
+IntUnaryOperator    int     applyAsInt(int)
+LongUnaryOperator   long    applyAsLong(long)
+
+DoubleBinaryOperator double applyAsDouble(double, double)
+IntBinaryOperator    int    applyAsInt(int, int)
+LongBinaryOperator   int    applyAsLong(long, long)
+
+
+
 ```
 
 ## SomeExamples practiced
