@@ -34,3 +34,70 @@ BinaryOperator<T>   T apply(T, T)       // Function takes 2 T parameters and T a
 
 ```
 
+## Methods examples
+
+```java
+
+Interface    ReturnType  method
+
+Consumer     Consumer    andThen() 
+
+
+Function     Function    andThen()
+
+
+Function     Function    compose()
+
+
+```
+
+## SomeExamples practiced
+
+```java
+
+public class ConvenienceMethods {
+    public static void main(String[] args) {
+
+        Predicate<String> eggs = s -> s.contains("eggs");
+        System.out.println(eggs.test("eggs"));
+
+        Predicate<String> brown = s -> s.contains("brown");
+
+        Predicate<String> brownEggs = eggs.and(brown);
+        Predicate<String> otherEggs = eggs.and(brown.negate());
+
+        System.out.println(otherEggs.test("Red eggs"));
+
+        System.out.println(brownEggs.test("brown eggs"));
+
+
+        Consumer<String> c1 = x1 -> System.out.println("1:"+x1);
+        Consumer<String> c2 = x2 -> System.out.println("2:"+x2);
+
+        List<String> list = new ArrayList<>(List.of("a", "b", "c"));
+
+        Collections.replaceAll(list, "a", "A");
+
+        System.out.println(list);
+
+
+        Function<Integer, Integer> before =  x -> x +1 ;
+        Function<Integer, Integer> after = x -> x * x;
+
+        Function<Integer, Integer> f3 = after.compose(before);
+
+        System.out.println(f3.apply(1));
+
+        
+
+
+    }
+
+}
+
+
+
+
+```
+
+
