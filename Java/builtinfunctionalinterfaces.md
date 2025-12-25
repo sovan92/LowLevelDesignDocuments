@@ -38,9 +38,9 @@ BinaryOperator<T>   T apply(T, T)       // Function takes 2 T parameters and T a
 
 ```java
 
-Interface    ReturnType  Method
+||Interface   || ReturnType || Method |
 
-Consumer     Consumer    andThen() 
+|Consumer   |  Consumer |   andThen() |
 
 
 Function     Function    andThen()
@@ -56,6 +56,9 @@ Predicte     Predicate   or()
 
 
 Predicte     Predicate   negate()
+
+
+DoubleSupplier
 ```
 
 ## SomeExamples practiced
@@ -101,10 +104,7 @@ public class ConvenienceMethods {
     }
 
 }
-
-
-
-
 ```
+
 
 
