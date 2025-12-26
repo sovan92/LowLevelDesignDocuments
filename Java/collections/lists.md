@@ -42,6 +42,25 @@ var list3 = new ArrayList<String>(10); // You can provide a single argument to p
 
 ## Working with lists methods. 
 
+```java
+
+boolean add(E element)  // Available on collection interface.
+
+void add(int index, E element) // Add element at index and moves all other elements by 1 towards the end. There is a difference between collection and this. 
+
+E get(int index) // Get element at index.
+
+int indexOf(E element) // get indexOf or get -1 if not found.
+
+int lastIndexOf(E element) // get last index of or get -1
+
+E remove(int index)  // removes at index . Look at the difference . The Collection remove provides a boolean , this remove provides a Element. 
+
+
+
+
+
+```
 
 
 
