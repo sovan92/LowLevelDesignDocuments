@@ -64,8 +64,6 @@ E set(int index, E element) // replaces element at index and returns the origina
 
 default void sort(Comparator<? super E> c) Sorts list. We cover this in the sorting data section.
 
-
-
 ```
 
 
