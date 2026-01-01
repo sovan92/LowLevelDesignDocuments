@@ -13,6 +13,19 @@ for(Integer x : integers):
 
 // prints in any order. 
 
+Set<Integer> integers = new LinkedHashSet<>();
 
+integers.add(100); // true
+integers.add(120); // true
+integers.add(300); // true
+
+for(Integer x : integers):
+    System.out.println(x);
+
+// prints [100, 200, 300]
+
+Set<Integer> integers = new TreeSet<>();
+
+// Prints in the natural order or integers . Stores them in a binary search tree. 
 
 ```
