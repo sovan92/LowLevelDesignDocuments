@@ -3,7 +3,7 @@
 ## Initialization of sets
 ```java
 
-Set<Integer> set = Set.of('a','b','c');
+Set<Character> letters = Set.of('a','b','c');
 
 
 ```
